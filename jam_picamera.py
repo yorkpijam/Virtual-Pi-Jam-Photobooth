@@ -3,7 +3,7 @@ from picamera import PiCamera
 from time import gmtime, strftime
 import os
 
-overlay_path = os.path.join(os.path.dirname(__file__), 'bbw.png')
+overlay_path = os.path.join(os.path.dirname(__file__), 'Backdrop.png')
 overlay = Image.open(overlay_path)
 
 def _pad(resolution, width=32, height=16):
