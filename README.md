@@ -8,7 +8,8 @@ By default takes 4 photographs, each controlled by the button
 Tweets the 4 photographs (unless the button is pressed to cancel) with the Virtual Pi Jam theme logo overlaid in the corner, and a specified message with the tweet
 Works offline or without Twitter feature if not configured, and saves to Pi.
 
-Requirements
+# Requirements
+
 Hardware:
 
 Raspberry Pi (any model with a camera port)
@@ -19,13 +20,14 @@ Software:
 Picamera
 GPIO Zero
 Twython
-Automated installation
+
+# Automated installation
 Open a terminal window and type:
 
-curl -sSL http://rpf.io/jampb | bash
+curl -sSL https://raw.githubusercontent.com/yorkpijam/Virtual-Pi-Jam-Photobooth/master/setup.sh | bash
 Note this reboots the Pi at the end of the script, and launches the program automatically.
 
-Manual installation
+# Manual installation
 Start with a Raspbian Stretch desktop image.
 
 Connect the camera module and wire your button to GPIO14.
@@ -81,9 +83,9 @@ Photos tweeted are still stored in the Pictures folder.
 
 To disable the Twitter feature, simply restore the CON_KEY variable to an empty string
 
-IMPORTANT: Do not share the API keys. Do not accidentally push them to GitHub.
+# IMPORTANT: Do not share the API keys. Do not accidentally push them to GitHub.
 
-Languages
+# Languages
 Simply edit text.py, which contains dictionaries of the strings used as camera text annotations, and add a copy of the English language dictionary text_en below, renaming it as appropriate. Then replace the dictionary values (right hand side) with the translated equivalents, leaving the keys (left hand side) the same.
 
 Please note that the camera firmware does not support non-ASCII characters.
@@ -100,5 +102,5 @@ Spanish (Español) - es
 Welsh (Cymraeg) - cy
 Pull requests with more language support welcome, as are any improvements to existing translations (they were all done using Google Translate).
 
-Credits
+# Credits
 Thanks to Ben Nuttall for allowing us to borrow and edit the code for Virtual Pi Jam use.
